@@ -1,0 +1,16 @@
+{
+  "VOUCHER": {
+    "type": "2_for_1",
+    "price": 5.00
+  },
+  "TSHIRT": {
+    "type": "bulk",
+    "price": 20.00,
+    "discount_amount": 1.00,
+    "min": 3
+  },
+  "PANTS": {
+    "type": "no_discount",
+    "price": 7.50
+  }
+}
