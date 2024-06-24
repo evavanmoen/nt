@@ -4,7 +4,7 @@ import json
 class Checkout:
     def __init__(self, pricing_rules):
         """
-        Initializes a Checkout instance
+        Initializes a Checkout instance.
 
         Args:
             pricing_rules (dict): A dictionary containing pricing rules for items
@@ -14,7 +14,7 @@ class Checkout:
 
     def scan(self, item):
         """
-        Adds an item to the list of scanned items
+        Adds an item to the list of scanned items.
 
         Args:
             item (str): The item to be added
@@ -23,7 +23,7 @@ class Checkout:
 
     def total(self):
         """
-        Calculates the total cost of scanned items based on pricing rules
+        Calculates the total cost of scanned items based on pricing rules.
 
         Returns:
             float: The total cost of all scanned items after applying any discounts
@@ -50,7 +50,7 @@ class Checkout:
     @staticmethod
     def load_rules(file_path):
         """
-        Loads pricing rules from a JSON file
+        Loads pricing rules from a JSON file.
 
         Args:
             file_path (str): The path to the JSON file containing pricing rules
@@ -89,7 +89,7 @@ class Checkout:
     @staticmethod
     def _apply_discount_2_for_1(price, count):
         """
-        Applies "2 for 1" discount calculation
+        Applies "2 for 1" discount calculation.
 
         Args:
             price (float): The price per item
@@ -103,7 +103,7 @@ class Checkout:
     @staticmethod
     def _apply_discount_bulk(min_items, discount_amount, price, count):
         """
-        Applies bulk discount calculation
+        Applies bulk discount calculation.
 
         Args:
             min_items (int): The minimum number of items required for the discount
