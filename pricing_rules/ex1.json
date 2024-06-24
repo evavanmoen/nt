@@ -7,10 +7,10 @@
     "type": "bulk",
     "price": 20.00,
     "discount_amount": 1.00,
-    "min": 3
+    "min_items": 3
   },
   "PANTS": {
-    "type": "no_discount",
+    "type": "none",
     "price": 7.50
   }
 }
