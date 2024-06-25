@@ -1,4 +1,3 @@
-import os
 from checkout.checkout import Checkout
 
 
