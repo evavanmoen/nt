@@ -45,7 +45,7 @@ Pudiendo ser actualizables en cualquier momento.
 ###### (tests/test_ex1.json)
 Utiliza `unittest` para verificar el comportamiento esperado del sistema de cobro bajo diferentes escenarios de compra.
 
-## Ejecución principal
+## Programa principal
 ###### (main.py)
 Un ejemplo básico de cómo utilizar la clase Checkout para calcular el total de una compra.
 
