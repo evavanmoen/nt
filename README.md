@@ -49,39 +49,11 @@ Utiliza `unittest` para verificar el comportamiento esperado del sistema de cobr
 ###### (main.py)
 Un ejemplo básico de cómo utilizar la clase Checkout para calcular el total de una compra.
 
-## Arquitectura Propuesta
+## Ejecución
+1. Clonar el repositorio: clona este repositorio en tu máquina local.
+2. Ejecutar pruebas: ejecuta las pruebas unitarias en tests/test_ex1.py para verificar que todo funcione como se espera.
+3. Uso del programa principal: utiliza `main.py` como punto de entrada para integrar el sistema de cobro en tu aplicación.
 
-1. **Ingesta de datos:** 
-   - Utilizando Apache Kafka para la captura en tiempo real y S3 / Azure Blob Storage para almacenamiento de archivos.
-
-2. **Data Lake:**
-   - Almacenamiento escalable en S3 / Azure Blob Storage para datos crudos antes de la transformación y carga en el Data Warehouse.
-
-3. **Transformación de datos:**
-   - AWS Glue para la realización y automatización del ETL, con soporte para datos estructurados y semi-estructurados.
-   - PySpark para análisis de logs no estructurados de servidores.
-
-4. **Data Warehouse:**
-   - Almacenamiento centralizado y optimizado en Snowflake / Amazon Redshift para análisis avanzado de datos.
-
-5. **Transformación con dbt:**
-   - Definición de modelos SQL y tests para asegurar la calidad y consistencia de los datos transformados antes de la carga final.
-
-6. **Carga a bases de datos:**
-   - Scripts personalizados gestionados con Apache Airflow para la carga eficiente de datos en PostgreSQL, MongoDB, Redis, etc.
-
-7. **Bases de Datos:**
-   - PostgreSQL (p.ej.: gestión de datos de usuario y transacciones).
-   - MongoDB (p.ej.: almacenamiento flexible y de rápido acceso a datos de inventario y logs de servidores).
-
-#### Ventajas:
-- **Escalabilidad:** esta arquitectura permite escalar horizontalmente cada componente según las necesidades de procesamiento y almacenamiento de datos.
-
-- **Flexibilidad:** separar los datos en capas (ingesta, data lake, data warehouse y bases de datos finales) ofrece flexibilidad para crecer y adaptarse a nuevos requisitos sin tener que reestructurar toda la arquitectura.
-
-#### Problemas:
-- **Complejidad:** integrar múltiples tecnologías puede introducir complejidad operativa y requerir de habilidades concretas del equipo.
-  
-- **Consistencia y sincronización:** asegurar la consistencia entre los diferentes almacenamientos y bases de datos puede ser un desafío, especialmente en entornos distribuidos.
-
-- **Seguridad:** garantizar la seguridad de los datos en todas las etapas del proceso.
+## Notas
+- Asegúrate de tener Python instalado para ejecutar el proyecto.
+- Puedes ajustar las reglas de precios en pricing_rules/ex1.json según los requisitos específicos del momento.
