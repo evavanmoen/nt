@@ -18,7 +18,8 @@
 
 **`main.py`**: script principal que muestra un ejemplo de cómo utilizar el sistema de cobro para calcular el total de una compra.
 
-## Checkout 
+## Explicación Proyecto
+### Checkout
 ###### (checkout/checkout.py)
 #### La clase `Checkout` maneja el cobro y aplica las reglas de descuento definidas.
 #### Métodos principales:
@@ -36,16 +37,16 @@
    - `_apply_discount_2_for_1(price, count)`: aplica el descuento 2 por 1.
    - `_apply_discount_bulk(min_items, discount_amount, price, count)`: aplica el descuento por compra a granel.
 
-## Reglas de precios
+### Reglas de precios
 ###### (pricing_rules/ex1.json)
 Define las reglas de precios para cada producto disponible en la tienda, especificando qué descuentos disponibles hay y a qué artículo se asocia.
 Pudiendo ser actualizables en cualquier momento.
 
-## Pruebas unitarias
+### Pruebas unitarias
 ###### (tests/test_ex1.json)
 Utiliza `unittest` para verificar el comportamiento esperado del sistema de cobro bajo diferentes escenarios de compra.
 
-## Programa principal
+### Programa principal
 ###### (main.py)
 Un ejemplo básico de cómo utilizar la clase Checkout para calcular el total de una compra.
 
