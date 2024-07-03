@@ -8,7 +8,7 @@ def main():
     checkout.scan('VOUCHER')
     checkout.scan('TSHIRT')
     checkout.scan('PANTS')
-    print(f"Total: {checkout.total()}€")  # Expected: 'Total: 32.50€'
+    print(f"Total: {checkout.total()}€")  # Expected: 'Total: 32.5€'
 
 
 if __name__ == "__main__":

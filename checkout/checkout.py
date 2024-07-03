@@ -9,7 +9,7 @@ class Checkout:
         Args:
             pricing_rules (dict): A dictionary containing pricing rules for items
         """
-        self.items = []  # initialize an empty list
+        self.items = []  # initialize an empty list for scanned items
         self.pricing_rules = pricing_rules  # reload pricing rules for item pricing
 
     def scan(self, item):
